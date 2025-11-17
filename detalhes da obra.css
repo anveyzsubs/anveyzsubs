@@ -1,0 +1,79 @@
+/* --- ESTILIZAÇÃO DA PÁGINA DE DETALHES --- */
+
+/* Usando Flexbox para colocar a capa e o texto lado a lado */
+.details-info {
+    display: flex;
+    gap: 40px; /* Espaço entre a capa e o texto */
+    align-items: flex-start; /* Alinha o conteúdo ao topo */
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.details-cover {
+    /* Define o tamanho da coluna da capa */
+    flex: 0 0 300px; 
+    text-align: center;
+}
+
+.details-cover img {
+    /* Estilo para a capa maior */
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details-text {
+    /* Permite que o texto ocupe o espaço restante */
+    flex-grow: 1; 
+}
+
+.details-text h2 {
+    text-align: left; /* Altera o título da obra para ficar à esquerda */
+    border-bottom: none;
+    margin-top: 0;
+}
+
+.details-cover .status {
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+}
+
+.details-cover .read-button {
+    /* Estiliza o botão COMEÇAR A LER */
+    display: block;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    margin: 15px 0;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Estilização da Lista de Capítulos */
+.chapter-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.chapter-list ul li {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.chapter-list ul li a {
+    text-decoration: none;
+    color: #007bff; /* Cor de link azul padrão */
+    font-size: 1.1em;
+}
+
+.chapter-list ul li a:hover {
+    color: #ffcc00;
+}

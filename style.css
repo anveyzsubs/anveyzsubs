@@ -1,0 +1,110 @@
+/* Configurações Gerais (Reset Básico) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Fundo claro para o corpo */
+  color: #333; /* Cor padrão do texto */
+}
+
+/* --- ESTILIZAÇÃO DO CABEÇALHO (HEADER) --- */
+header {
+  background-color: #1a1a1a; /* Cor de fundo escura */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #ffcc00; /* Destaque para o título Anveyz Subs */
+}
+
+/* Estilização da Navegação (NAV) */
+nav ul {
+  list-style: none; /* Remove os pontos */
+  padding: 0;
+  margin-top: 10px;
+  display: flex; /* Permite que os itens fiquem lado a lado */
+  justify-content: center; /* Centraliza os itens */
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none; /* Remove o sublinhado do link */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00; /* Mudar cor ao passar o mouse */
+}
+
+/* --- ESTILIZAÇÃO DO CONTEÚDO PRINCIPAL (MAIN) --- */
+main {
+  padding: 20px;
+  max-width: 1200px; /* Limita a largura do conteúdo para não ficar muito esticado */
+  margin: 0 auto; /* Centraliza o bloco main */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+/* Estilização da Grade de Conteúdo (Cards) */
+.content-grid {
+  display: flex; /* Habilita o Flexbox */
+  flex-wrap: wrap; /* Permite que os cards quebrem a linha */
+  gap: 20px; /* Espaçamento entre os cards */
+  justify-content: space-around; /* Distribui os cards no espaço */
+}
+
+.content-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: calc(
+    33% - 20px
+  ); /* Tenta colocar 3 cards por linha (33%) menos o espaço do gap */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.content-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.content-card a {
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  padding: 8px 15px;
+  text-decoration: none;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* --- ESTILIZAÇÃO DO RODAPÉ (FOOTER) --- */
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+  margin: 0 5px;
+}
